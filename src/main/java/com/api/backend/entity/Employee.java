@@ -47,6 +47,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getCPF() {
         return CPF;
     }

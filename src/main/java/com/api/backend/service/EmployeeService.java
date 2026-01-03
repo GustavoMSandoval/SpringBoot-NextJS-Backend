@@ -22,6 +22,7 @@ public class EmployeeService {
 
     private EmployeeResponse toResponse(Employee employee) {
         return new EmployeeResponse(
+            employee.getId(),
             employee.getCPF(), 
             employee.getEmail(), 
             employee.getName(), 
