@@ -20,11 +20,12 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String CPF;
 
     @NotBlank(message = "Email cannot be blank!")
     @Email(message = "Not valid Email!")
+    @Column(unique = true)
     private String email;
 
     @NotBlank(message = "Name cannot be blank!")
