@@ -31,7 +31,7 @@ public class EmployeeService {
 
     public EmployeeResponse create(EmployeeRequest request) {
 
-        if(!cpfValidator.isValidCPF(request.CPF())) {
+        if(!cpfValidator.isValid(request.CPF())) {
             throw new RuntimeException("Invalid CPF!");
         }
 
